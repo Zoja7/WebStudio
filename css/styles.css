@@ -66,8 +66,6 @@ img {
 }
 
 
-
-
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -474,6 +472,43 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     font-weight: 500;
 }
 
+@media screen and (min-width: 768px){
+    .advanteges-gallery-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .advanteges-gallery-item{
+        width: calc((100% - 24px) / 2);
+    }
+    .title-second-h{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .advanteges{
+        padding: 120px 0;
+    }
+    .advanteges-gallery-list{
+        gap: 24px;
+    }
+    .advanteges-gallery-item {
+        width: calc((100% - 72px) / 4);
+    }
+    .advanteges-container-icon{
+        display: flex;
+    }
+
+    .title-second-h{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .description{
+        font-weight: 400px;
+    }
+}
 /*==section 3==*/
 
 .service{
