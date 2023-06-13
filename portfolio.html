@@ -44,6 +44,13 @@
                 </li>
                  </ul>
             </nav>
+
+            <button type="button" class="mobile-menu-open-btn" data-menu-open>
+                <svg class="mobile-menu-open-btn-icon" aria-label="burger-open-button" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger">
+                    </use>
+                </svg>
+            </button>
     
             <address class="contacts">
              <ul class="contact-list list">
@@ -56,14 +63,97 @@
              </ul>
             </address>
         </div>
+
+<!--MOBILE_MENU-->
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="mobile-menu-close-icon" aria-label="burger-close-button" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-btn">
+                        </use>
+                    </svg>
+                </button>
+
+                <ul class="mobile-menu-list list" lang="en">
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link  main-link link" href="./index.html">Studio</a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link  link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                
+                    <li class="mobile-menu-item">
+                        <a class="mobile-menu-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+             
+                <div>
+                <address class="mobile-contacts">
+                    <ul class="mobile-contact-list list">
+                        <li class="mobile-contact-list-item">
+                            <a class="mobile-contact-list-link mobile-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mobile-contact-list-item">
+                            <a class="mobile-contact-list-link mobile-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+
+                <ul class="mobile-social-list list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" aria-label="instagram`s icon" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" aria-label="twitter`s icon" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" aria-label="facebook`s icon" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link">
+                            <svg class="social-list-icon" aria-label="linkedin`s icon" width="24" height="24">
+                
+                                <use href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+               </div>
+            </div>
+        </div>
     </header>
 
-    <main class="about">
+   <main class="about">
 
-        <section class="filter-buttons">
+        <section class="filter-buttons section">
             <div class="container">
 
              <h1 class="visually-hidden">Solutions</h1>
+             
                 <ul class="filter-buttons-list list" lang="en">
                     <li class="filter-button-item">
                          <button class="filter-button" type="button">All</button>  
@@ -85,13 +175,26 @@
                 <ul class="projects-gallery-list list" lang="en">
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link"> 
-
                             <div class="project-gallery-img-wrapper">
-                                <img  class="project-gallery-img" 
-                                src="./images/portfolio/img1.jpg" 
-                                alt="banking_app" 
-                                width="360" 
-                                height="300">
+
+                        <picture>
+                            <source srcset="./images/portfolio/img1.jpg 1x,
+                            ./images/portfolio/img1@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img1_t.jpg 1x, 
+                            ./images/portfolio/img1_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img1_m.jpg 1x, 
+                            ./images/portfolio/img1_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img1.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+
                                 <p class="overlay">
                                     14 Stylish and User-Friendly 
                                     App Design Concepts 
@@ -111,14 +214,27 @@
             
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
+                             <div class="project-gallery-img-wrapper">
 
-                            <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img2.jpg"
-                                alt="cashless_payment" 
-                                width="360" 
-                                height="300">
-                        
+                        <picture>
+                            <source srcset="./images/portfolio/img2.jpg 1x,
+                            ./images/portfolio/img2@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img2_t.jpg 1x, 
+                            ./images/portfolio/img2_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img2_m.jpg 1x, 
+                            ./images/portfolio/img2_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img2.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+                                
+
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
                                     App Design Concepts
@@ -138,13 +254,27 @@
             
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
-
                             <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img3.jpg"
-                                alt="leptop_and_phone_screen_picture" 
-                                width="360" 
-                                height="300">
+                              
+
+                        <picture>
+                            <source srcset="./images/portfolio/img3.jpg 1x,
+                            ./images/portfolio/img3@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img3_t.jpg 1x, 
+                            ./images/portfolio/img3_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img3_m.jpg 1x, 
+                            ./images/portfolio/img3_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img3.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+
 
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
@@ -165,14 +295,27 @@
 
                      <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
+                            <div class="project-gallery-img-wrapper"> 
 
-                            <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img4.jpg" 
-                                alt="car_driver" 
-                                width="360"
-                                height="300">
+                        <picture>
+                            <source srcset="./images/portfolio/img4.jpg 1x,
+                            ./images/portfolio/img4@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img4_t.jpg 1x, 
+                            ./images/portfolio/img4_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img4_m.jpg 1x, 
+                            ./images/portfolio/img4_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
 
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img4.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+ 
+                              
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
                                     App Design Concepts
@@ -192,13 +335,26 @@
                 
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
+                          <div class="project-gallery-img-wrapper">
+                              
+                        <picture>
+                            <source srcset="./images/portfolio/img5.jpg 1x,
+                            ./images/portfolio/img5@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img5_t.jpg 1x, 
+                            ./images/portfolio/img5_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img5_m.jpg 1x, 
+                            ./images/portfolio/img5_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
 
-                            <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img5.jpg"
-                                alt="screen_illustrations"
-                                width="360" 
-                                height="300">
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img5.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
                                     App Design Concepts
@@ -218,14 +374,27 @@
                 
                      <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
-
                             <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img6.jpg"
-                                alt="smiling_girl"
-                                width="360" 
-                                height="300">
 
+    
+                        <picture>
+                            <source srcset="./images/portfolio/img6.jpg 1x,
+                            ./images/portfolio/img6@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img6_t.jpg 1x, 
+                            ./images/portfolio/img6_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img6_m.jpg 1x, 
+                            ./images/portfolio/img6_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img6.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+                               
                                     <p class="overlay">
                                         14 Stylish and User-Friendly
                                         App Design Concepts
@@ -245,14 +414,26 @@
 
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link ">
-
                             <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img7.jpg" 
-                                alt="instagram_photoes" 
-                                width="360" 
-                                height="300">
 
+                        <picture>
+                            <source srcset="./images/portfolio/img7.jpg 1x,
+                            ./images/portfolio/img7@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img7_t.jpg 1x, 
+                            ./images/portfolio/img7_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img7_m.jpg 1x, 
+                            ./images/portfolio/img7_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img7.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+                            
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
                                     App Design Concepts
@@ -272,13 +453,26 @@
                 
                      <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
-
                             <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img8.jpg" 
-                                alt="organic_food" 
-                                width="360"
-                                height="300">
+
+                              
+                        <picture>
+                            <source srcset="./images/portfolio/img8.jpg 1x,
+                            ./images/portfolio/img8@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img8_t.jpg 1x, 
+                            ./images/portfolio/img8_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img8_m.jpg 1x, 
+                            ./images/portfolio/img8_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img8.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
 
                                 <p class="overlay">
                                     14 Stylish and User-Friendly
@@ -299,14 +493,26 @@
                 
                     <li class="project-gallery-item">
                         <a href="" class="gallery-link link">
-
                             <div class="project-gallery-img-wrapper">
-                                <img class="project-gallery-img" 
-                                src="./images/portfolio/img9.jpg"
-                                alt="fresh_coffe_marceting" 
-                                width="360" 
-                                height="300">
 
+                        <picture>
+                            <source srcset="./images/portfolio/img9.jpg 1x,
+                            ./images/portfolio/img9@2x.jpg 2x"
+                            media="(min-width: 1158px)" />
+                            <source srcset="./images/portfolio/img9_t.jpg 1x, 
+                            ./images/portfolio/img9_t@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio/img9_m.jpg 1x, 
+                            ./images/portfolio/img9_m@2x.jpg 2x" 
+                            media="(max-width: 767px)" />
+
+                            <img class="team-gallery-img" 
+                            src="./images/portfolio/img8.jpg"
+                            alt="photo_designer" 
+                            width="396"
+                            height="280">
+                        </picture>
+                            
                                <p class="overlay">
                                     14 Stylish and User-Friendly
                                     App Design Concepts
@@ -437,6 +643,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
