@@ -1031,7 +1031,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 @media screen and (max-width: 767px) {
-    .footer-subscribe-desc{
+.footer-subscribe-desc{
         text-align: center;
     }
 }
@@ -1074,6 +1074,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     line-height: 2;
     color: rgb(255, 255, 255);
     transition: color var(--transition-duration-and-func);
+}
+
+.subscribe-form-input:focus {
+    outline: none;
+    border-color: var(--logo-color);
+}
+
+.subscribe-form-input:focus::placeholder{
+
+    color: var(--logo-color);
 }
 
 .subscribe-btn {
@@ -1184,10 +1194,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 @media screen  and (min-width: 1158px){
-.footer-social-media-content{
+    .footer-social-media-content{
     margin-right: 80px;
 
-}
+    }
     .footer-subscribe{
         width: 453px ;
     }
