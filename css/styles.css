@@ -1383,7 +1383,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-
+.portfolio-text{
+    font-weight: 400;
+}
 .title-second {
     font-weight: 500;
     font-size: 20px;
